@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>imagetrans.ico</ApplicationIcon>
+    <ApplicationIcon>silhouette.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="imagetrans.ico" />
+    <Content Include="silhouette.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
