@@ -9,7 +9,7 @@ namespace JavaLauncher
         static void Main(string[] args)
         {
             string workDir = Directory.GetParent(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString();
-            string arguments = "--module-path jre\\javafx\\lib --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.web,javafx.swing --add-opens javafx.controls/com.sun.javafx.scene.control.skin=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.collections=ALL-UNNAMED -jar .\\ImageTrans.jar";
+            string arguments = "--module-path jre\\javafx\\lib --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.web,javafx.swing --add-opens javafx.controls/com.sun.javafx.scene.control.skin=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.collections=ALL-UNNAMED --add-exports java.desktop/sun.awt=ALL-UNNAMED -jar .\\ImageTrans.jar";
             if (args.Length > 0) {
                 arguments += " ";
                 arguments += String.Join(" ", args);
