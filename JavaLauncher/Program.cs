@@ -10,7 +10,7 @@ namespace JavaLauncher
         static void Main(string[] args)
         {
             string workDir = Directory.GetParent(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString();
-            string baseArguments = "--module-path jre\\javafx\\lib --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.web,javafx.swing --add-opens javafx.controls/com.sun.javafx.scene.control.skin=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.collections=ALL-UNNAMED --add-exports java.desktop/sun.awt=ALL-UNNAMED -jar .\\ImageTrans.jar";
+            string baseArguments = "--module-path jre\\javafx\\lib --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.web,javafx.swing --add-opens javafx.controls/com.sun.javafx.scene.control.skin=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.collections=ALL-UNNAMED --add-exports java.desktop/sun.awt=ALL-UNNAMED --add-exports java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-exports java.desktop/com.sun.imageio.plugins.png=ALL-UNNAMED --add-exports java.desktop/com.sun.imageio.plugins.bmp=ALL-UNNAMED --add-exports java.desktop/com.sun.imageio.plugins.gif=ALL-UNNAMED --add-exports java.desktop/com.sun.imageio.plugins.wbmp=ALL-UNNAMED --add-exports java.desktop/com.sun.imageio.spi=ALL-UNNAMED --add-opens java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED -jar .\\ImageTrans.jar";
 
             string arguments = baseArguments;
             if (args.Length > 0)
